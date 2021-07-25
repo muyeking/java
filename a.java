@@ -1,4 +1,4 @@
-
+//1234组成多少不同三位数
 public class a {
 
 	public static void main(String[] args) {
@@ -18,6 +18,6 @@ public class a {
 		    }
 		
 	    }
-		System.out.println("�����"+d+"����");
+		System.out.println("ÄÜ×é³É"+d+"¸öÊý");
 	}
 }
