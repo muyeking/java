@@ -1,4 +1,4 @@
-
+//用数组计算天数
 public class day3_1 {
 
 	public static void main(String[] args) {

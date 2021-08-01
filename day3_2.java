@@ -1,4 +1,4 @@
-
+//完全平方数
 public class day3_2 {
 
 	public static void main(String[] args) {

@@ -1,4 +1,4 @@
-//1234ç»„æˆå¤šå°‘ä¸åŒä¸‰ä½æ•°
+//1234×é³É¶àÉÙ¸ö²»Í¬ÈıÎ»Êı
 public class a {
 
 	public static void main(String[] args) {
@@ -18,6 +18,6 @@ public class a {
 		    }
 		
 	    }
-		System.out.println("Ã„ÃœÃ—Ã©Â³Ã‰"+d+"Â¸Ã¶ÃŠÃ½");
+		System.out.println("ÄÜ×é³É"+d+"¸öÊı");
 	}
 }

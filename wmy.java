@@ -9,7 +9,7 @@ public class wmy {
 		//if(mat[0]+mat[1]==9)
 			//System.out.println("[0,1]");
 		for(int i=0;i<mat.length;i++) {
-			for(int j=i+1;j<4;j++) {
+			for(int j=i+1;j<mat.length;j++) {
 				if(mat[i]+mat[j]==target) {
 					System.out.printf("i=%d\n",i);
 		            System.out.printf("j=%d\n",j);
