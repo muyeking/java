@@ -14,23 +14,11 @@ public class day16_1 {
 		return a;
 	}
 	public String ZiFu(String s,String m,String n) {
-		char matX[]=new char[s.length()];
-		char matY[]=new char[m.length()];
-		char matZ[]=new char[n.length()];
-		for(int i=0;i<s.length();i++) {
-			matX[i]=s.charAt(i);
-		}
-		for(int i=0;i<m.length();i++) {
-			matY[i]=m.charAt(i);
-		}
-		for(int i=0;i<n.length();i++) {
-			matZ[i]=n.charAt(i);
-		}
 		int i=0;
 		StringBuffer res=new StringBuffer(Min(s,m,n));
 		for(i=0;i<Min(s,m,n);i++) {
-			if(matX[i]==matY[i]&&matX[i]==matZ[i]) {
-				res.append(matX[i]);
+			if(s.charAt(i)==m.charAt(i)&&s.charAt(i)==n.charAt(i)) {
+				res.append(s.charAt(i));
 			}
 			else { 
 				break;
