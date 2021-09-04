@@ -1,8 +1,9 @@
+//定义一个Student类 有name  score，打印出该班级所有学生的姓名和成绩
 public class Student {
     private String name;
     private int Mathscore;
     private int Englishscore;
-//    private int average;
+    private int average;
     private int all;
     public String getName(){
         return name;
@@ -22,21 +23,13 @@ public class Student {
     public void setEnglishscore(int Englishscore){
         this.Englishscore=Englishscore;
     }
-    // private int getaverage(){
-    //     return average;
-    // }
-    // private void setaverage(){
-    //     this.average=average;
-    // }
+    public int getaverage(){
+        return (this.Englishscore+this.Mathscore)/2;
+    } 
     public int getall(){
         return this.Englishscore+this.Mathscore;
     }
-    // private void setall( ){
-    //     this.all=all;
-    // }
-    // public int all(int a,int b){
-    //     all=a+b;
-    //     return all;
+    
 }
 
 class Test{
@@ -49,14 +42,17 @@ class Test{
         x=m.getName();
         y=h.getName();
         int a,b,c,d,mingAll,huaAll;
+        int mingAverage,huaAverage;
         m.setMathscore(90);
         h.setMathscore(88);
         m.setEnglishscore(70);
         h.setEnglishscore(90);
         mingAll=m.getall();
         huaAll=h.getall();
-        System.out.printf("姓名 数学成绩 英语成绩  总分\n");
-        System.out.printf("%s    %d       %d      %d\n",x,m.getMathscore(),m.getEnglishscore(),mingAll);
-        System.out.printf("%s    %d       %d      %d\n",y,h.getMathscore(),h.getEnglishscore(),huaAll);
+        mingAverage=m.getaverage();
+        huaAverage=h.getaverage();
+        System.out.printf("姓名 数学成绩 英语成绩   平均分  总分\n");
+        System.out.printf("%s    %d       %d       %d     %d\n",x,m.getMathscore(),m.getEnglishscore(),mingAverage,mingAll);
+        System.out.printf("%s    %d       %d       %d     %d\n",y,h.getMathscore(),h.getEnglishscore(),huaAverage,huaAll);
     }
 }
