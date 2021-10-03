@@ -1,4 +1,4 @@
-//·µ»Ø×Ö·ûÊý×é
+//è¿”å›žå­—ç¬¦æ•°ç»„
 public class day15_2 {
 	public int Min(String s,String m,String n) {
 		int a;
